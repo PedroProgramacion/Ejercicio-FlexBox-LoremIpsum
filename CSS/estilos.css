@@ -19,6 +19,18 @@ header, footer {
   text-align: center; /* Alinea el texto al centro */
 }
 
+footer {
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  margin-top: 0px; /* Separa el footer */
+  position: relative; /* Mantén el footer en su lugar */
+}
+
+
+
+
 /* Contenedor principal */
 .container {
   display: flex; /* Hace que el contenedor sea un contenedor flexbox */
@@ -26,7 +38,10 @@ header, footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del contenedor */
   justify-content: center; /* Centra los elementos horizontalmente */
   align-items: flex-start; /* Alinea los elementos en la parte superior */
+  flex-grow: 1; /* Permite que el contenedor crezca y empuje el footer hacia abajo */
+  min-height: 800px; /* Aumenta el tamaño del contenedor */
 }
+
 
 /* Navegación, contenido y barra lateral */
 nav, main, aside {
@@ -45,14 +60,14 @@ nav {
   padding: 10px; /* Espaciado interno reducido */
   flex-basis: 100px; /* Ancho base del nav */
   flex-shrink: 0; /* Evita que el nav se encoja */
-  height: 150px; /* Altura fija del nav */
+  height: 155px; /* Altura fija del nav */
 }
 
 /* Contenido principal (main) */
 main {
   background-color: #ecf0f1; /* Color de fondo gris claro */
   flex-grow: 2; /* Ocupa el espacio restante */
-  height: 700px; /* Altura fija del main */
+  height: 800px; /* Altura fija del main */
 }
 
 /* Barra lateral (aside) */
@@ -64,5 +79,5 @@ aside {
   flex-grow: 1; /* Ensancha el aside */
   flex-basis: 200px; /* Ancho base del aside */
   flex-shrink: 0; /* Evita que el aside se encoja */
-  height: 180px; /* Altura fija del aside */
+  height: 185px; /* Altura fija del aside */
 }
