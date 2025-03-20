@@ -30,6 +30,7 @@ footer {
 
 /* Contenedor principal */
 .container {
+  margin:0 29px;/*Empieza Arriba , derecha,abajo y izquierda es el ordes*/
   display: flex; /* Hace que el contenedor sea un contenedor flexbox */
   background-color: white; /* Color de fondo del contenedor */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del contenedor */
@@ -54,7 +55,7 @@ nav, main, aside {
 /* Navegación (nav) */
 nav {
   background-color: #2ecc71; /* Color de fondo verde */
-  padding: 10px; /* Espaciado interno reducido */
+  padding: 20px; /* Espaciado interno reducido */
   flex-basis: 100px; /* Ancho base del nav */
   flex-shrink: 0; /* Evita que el nav se encoja */
   height: 155px; /* Altura fija del nav */
